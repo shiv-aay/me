@@ -52,31 +52,14 @@ nav{
     z-index: 1;
 }
 footer{
-    position: sticky;
-    bottom:2px;
+    position: fixed;
+    bottom:0px;
 }
 body, ul, li,h1,h2, a{
     margin: 0;
     padding:0;
 }
-body{
-    animation: colorchange 15s;
-    animation-iteration-count: infinite;
-    -webkit-animation: colorchange 15s;
-    -webkit-animation-iteration-count: infinite;
-}
-@keyframes colorchange
-    {
-      0%   {background: white;}
-      50%  {background: grey;}
-      100% {background: white;}
-    }
- @-webkit-keyframes colorchange
-    {
-      0%   {background: white;}
-      50%  {background: grey;}
-      100% {background: white;}
-    }
+
 nav ul{
     max-width: 1200px;
     margin: 5px auto ;
@@ -137,7 +120,9 @@ span{
 
 }
 .opinion{
-    background-color: rgb(56, 56, 56);
+    background-color: rgba(200,200,200,1);
+    box-shadow: 0px -4px 5px 0px rgba(200,200,200,0.5);
+/*box-shadow: 0px -12px 18px 0px rgba(56,56,56,1);*/
    padding: 20px 100px;
    color: #333333;
    text-shadow: #f4f4f4;
