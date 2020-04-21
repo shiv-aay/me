@@ -21,7 +21,8 @@ header{
 }
 .w3-tangerine {
   font-family: "Tangerine", serif;
-  font-size: 30px;
+  font-size: 32px;
+  color: white;
 }
 .more_contacts{
     animation: shake 2s;
