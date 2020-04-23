@@ -71,16 +71,23 @@ header h1{
     height:400px;
 }
 nav{
-    background-color: #f4f4f4;
     padding: 0px;
     position:sticky;
     top:92px;
     box-sizing: border-box;
     z-index: 1;
+    background-color: #f4f4f4;
+
 }
 footer{
     position: fixed;
     bottom:0px;
+    width: 100%;
+}
+footer p{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
 }
 body, ul, li,h1,h2, a{
     margin: 0;
@@ -151,6 +158,7 @@ span{
     color: rgb(253, 123, 62);
 
 }
+
 .opinion{
     background-color: rgba(200,200,200,1);
     box-shadow: 0px -4px 5px 0px rgba(200,200,200,0.5);
@@ -160,7 +168,7 @@ span{
    text-shadow: #f4f4f4;
    font-size: larger;
    line-height: 1.5em;
-   
+   max-width: 100%;
 }
 .opinion li a img{
     transition: transform 0.5s;
@@ -180,7 +188,7 @@ span{
 .contact{
     
     white-space: nowrap;
-    
+    box-sizing: border-box;
 }
 .contact li{
     display: inline-block;
@@ -203,6 +211,15 @@ span{
     height: 205px;
     width: 205px;
 }
+section img{
+    max-width: 100%;
+}
+p{
+    font-size: 20px;
+}
+.intro{
+    font-size: 30px;
+}
 /* Making the page responsive*/
 
 @media screen and (max-width: 750px){
@@ -211,13 +228,12 @@ span{
         display: block;
         margin: 25px auto;
     }
+    .intro{font-size: 25px;}
     header{
-        background-color:grey;
-        text-align: center;
-        width:100%;
-        top:0;
-        left:0;
-        color: rgb(117, 117, 117);
+        position: static;
+    }
+    .banner img{
+        height: 400px;
     }
     .navigation a{
         padding: 4px 5px;
@@ -225,9 +241,7 @@ span{
     nav li{
         font-size: 20px;
     }
-    header{
-        position: static;
-    }
+    
     nav{
         position: sticky;
         top:0;
@@ -244,14 +258,56 @@ span{
         font-size: 20px;
     }
     .w3-tangerine h1 img{
-    height: 35px;
-    width: 35px;
+    height: 40px;
+    width: 40px;
 }
+    .opinion li a img{
+        height: 50px;
+        width: 50px;
+    }
+    .opinion li a{
+
+        margin: 0; 
+        padding: 0;
+    }
+    .box a{
+        padding: 0;
+        margin: 0;
+    }
 
 }
-/*@media screen and (max-width: 750px){
-    #end li a img{
-        height: 40px;
-        width: 40px;
+@media screen and (max-width: 500px){
+    .opinion li a img{
+        height: 30px;
+        width: 30px;
     }
-}*/
+    main article p{
+        font-size: 15px;
+    }
+    .intro{font-size: 20px;}
+    nav li{font-size: 15px;}
+    .w3-tangerine{
+        font-size: 15px;
+    }
+    .w3-tangerine h1 img{
+    height: 30px;
+    width: 30px;
+}
+    .box a img{
+        height: 70px;
+        width: 70px;
+        padding: 0;
+        margin: 0;
+    }
+    .box a img:hover{
+        height: 75px;
+        width: 75px;
+    }
+    nav li{font-size: 14px;}
+    footer{    background-color: rgba(105,105,105,0.5);
+    }
+    footer p{
+        text-align: center;
+        color: white;
+    }
+}
